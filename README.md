@@ -1,2 +1,1 @@
-# mobb
-My Opinionated Basic Boilerplate
+# MOBB - My Opinionated Basic Boilerplate

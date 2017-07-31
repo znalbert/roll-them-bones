@@ -1,0 +1,19 @@
+{
+  "name": "mobb",
+  "version": "0.0.1",
+  "description": "An opinionated basic boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/znalbert/mobb.git"
+  },
+  "author": "Zoltan Albert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/znalbert/mobb/issues"
+  },
+  "homepage": "https://github.com/znalbert/mobb#readme"
+}
