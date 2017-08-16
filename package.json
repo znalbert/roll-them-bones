@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/znalbert/mobb/issues"
   },
-  "homepage": "https://github.com/znalbert/mobb#readme"
+  "homepage": "https://github.com/znalbert/mobb#readme",
+  "devDependencies": {
+    "webpack": "~3.5.4",
+    "webpack-dev-server": "~2.7.1"
+  }
 }
