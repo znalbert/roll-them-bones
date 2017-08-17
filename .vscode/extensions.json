@@ -1,0 +1,28 @@
+{
+	// See http://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+		// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+		"HookyQR.beautify",
+		"joelday.docthis",
+		"EditorConfig.editorconfig",
+		"dbaeumer.vscode-eslint",
+		"eg2.tslint",
+		"robertohuertasm.vscode-icons",
+		"christian-kohler.path-intellisense",
+    // Others Worth Maybe Getting
+    "formulahendry.auto-rename-tag",
+    "CoenraadS.bracket-pair-colorizer",
+    "formulahendry.code-runner",
+    "naumovs.color-highlight",
+    "anseki.vscode-color",
+    "pranaygp.vscode-css-peek",
+    "msjsdiag.debugger-for-chrome",
+    "waderyan.gitblame",
+    "donjayamanne.githistory",
+    "Zignd.html-css-class-completion",
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "robinbentley.sass-indented"
+  ]
+}

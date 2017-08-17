@@ -7,32 +7,29 @@ I was loathe to admit it that Microsoft came out with a product that I really, t
 ### Plugins
 There are a bunch that I'd recommend, but depending on the project you'll want to enable/disable some via your Workspace Settings.
 
-- Auto Rename Tag
-- Babel ES6/ES7
+#### Favorites
 - Beautify
+- Document This
+- EditorConfig for VS Code
+- ESLint
+- TSLint
+- vscode-icons
+- Path Intellisense
+
+#### Others Worth Maybe Getting
+- Auto Rename Tag
 - Bracket Pair Colorizer
 - Code Runner
 - Color Highlight
 - Color Picker
 - CSS Peek
 - Debugger for Chrome
-- Document This
-- EditorConfig for VS Code
-- ESLint
 - Git Blame
 - Git History (git log)
-- HTML Snippets
 - IntelliSense for CSS class names
-- JavaScript (ES6) code snippets
-- mssql
 - npm
 - npm Intellisense
-- Path Intellisense
-- React Native Tools
-- React code snippets
 - Sass
-- TSLint
-- vscode-icons
 
 ### Configuration: User Settings
 
@@ -50,20 +47,20 @@ With npm implementing a package-lock.json file I, personally, no longer see a ne
 ## To Do's
 - [ ] Editor & Configuration
   - [x] Editor
-  - [ ] Plugins
+  - [x] Plugins
   - [ ] User Settings
   - [ ] Workspace Settings
-- [x?] Package Management
-- [x?] Bundling
-- [x?] Minification
-- [x?] Sourcemaps
-- [x?] Transpiling
+- [x] Package Management
+- [ ] Bundling
+- [ ] Minification
+- [ ] Sourcemaps
+- [ ] Transpiling
 - [ ] Dynamic HTML Generation
 - [ ] Centralized HTTP
 - [ ] Mock API framework
 - [ ] Component Libraries
-- [x?] Development Webserver
-- [x?] Linting
+- [ ] Development Webserver
+- [ ] Linting
 - [ ] Automated Testing
 - [ ] Continuous Integration
 - [ ] Automated Build
