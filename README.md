@@ -32,6 +32,40 @@ There are a bunch that I'd recommend, but depending on the project you'll want t
 - Sass
 
 ### Configuration: User Settings
+One thing to note about User Settings in VS Code is that at the time of writing this you can't enable an extension just by Workspace. Instead, you must have it installed and enabled "Always," but then in user settings you can set the enabled flag to 'false'. After this you can switch the enabled flag to 'true' in individual Workspace Settings. This is particularly relevent when having both ESLint and TSLint installed, like below:
+```
+{
+    "workbench.iconTheme": "vscode-icons",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [
+        80
+    ],
+    "editor.minimap.enabled": true,
+    "terminal.integrated.shellArgs.osx": [
+        "-l"
+    ],
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80,
+        "editor.quickSuggestions": false,
+        "editor.wrappingIndent": "same"
+    },
+    "eslint.enable": false,
+    "tslint.enable": false,
+    "editor.wrappingIndent": "indent",
+    "editor.renderIndentGuides": true,
+    "workbench.editor.tabCloseButton": "left",
+    "workbench.quickOpen.closeOnFocusLost": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "window.zoomLevel": 0,
+    "editor.fontSize": 12,
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    }
+}
+```
 
 ### Configuration: Workspace Settings
 
@@ -48,7 +82,7 @@ With npm implementing a package-lock.json file I, personally, no longer see a ne
 - [ ] Editor & Configuration
   - [x] Editor
   - [x] Plugins
-  - [ ] User Settings
+  - [x] User Settings
   - [ ] Workspace Settings
 - [x] Package Management
 - [ ] Bundling
