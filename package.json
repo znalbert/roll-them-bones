@@ -4,7 +4,8 @@
   "description": "An opinionated basic boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "security": "nsp check"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "devDependencies": {
     "webpack": "~3.5.4",
     "webpack-dev-server": "~2.7.1"
+  },
+  "dependencies": {
+    "nsp": "^2.8.0"
   }
 }

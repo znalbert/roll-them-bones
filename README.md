@@ -70,7 +70,10 @@ One thing to note about User Settings in VS Code is that at the time of writing 
 ### Configuration: Workspace Settings
 
 ## Package Manager - npm
-With npm implementing a package-lock.json file I, personally, no longer see a need to use Yarn or some other solution.
+npm might not be perfect, but I see it as the simplest way to get going.
+
+### Node Security Platform - nsp
+Scan your `node_modules/` for potential security issues. This should be incorporated into the `npm start` script in order to catch potential security issues early.
 
 ## Bundling, Minification, Sourcemaps, Transpiling - webpack
 
