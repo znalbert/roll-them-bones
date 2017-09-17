@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 // const VENDOR_LIBS = [];
 
@@ -26,8 +27,12 @@ export default {
         use: ['style-loader','css-loader']
       }
 		]
-	},
+  },
+  devServer: {
+    contentBase: './dist'
+  },
 	plugins: [
+    new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			template: './src/index.html'
     }),
