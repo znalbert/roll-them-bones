@@ -2,7 +2,7 @@
 This is an opinionated boilerplate for newbs looking to get into the world of HTML, CSS, and JavaScript development.
 
 ## Editor - VS Code
-I was loathe to admit it that Microsoft came out with a product that I really, truly like. That being said, when I look at all the trade-offs for an editor, I do not know of another free editor that is as well-supported, full-featured, and active in plugin development. If you're some Vim wizard or Emacs god, fine. Otherwise, use VS Code to get up and running as painlessly as possible.
+When I look at all the trade-offs for an editor, I do not know of another free editor that is as well-supported, full-featured, and active in plugin development. If you're some Vim wizard or Emacs god, fine. Otherwise, use VS Code to get up and running as quickly and painlessly as possible.
 
 ### Plugins
 There are a bunch that I'd recommend, but depending on the project you'll want to enable/disable some via your Workspace Settings.
@@ -11,7 +11,6 @@ There are a bunch that I'd recommend, but depending on the project you'll want t
 - Beautify
 - Document This
 - EditorConfig for VS Code
-- ESLint
 - TSLint
 - vscode-icons
 - Path Intellisense
@@ -32,7 +31,7 @@ There are a bunch that I'd recommend, but depending on the project you'll want t
 - Sass
 
 ### Configuration: User Settings
-One thing to note about User Settings in VS Code is that at the time of writing this you can't enable an extension just by Workspace. Instead, you must have it installed and enabled "Always," but then in user settings you can set the enabled flag to 'false'. After this you can switch the enabled flag to 'true' in individual Workspace Settings. This is particularly relevent when having both ESLint and TSLint installed, like below:
+My user settings:
 ```
 {
     "workbench.iconTheme": "vscode-icons",
@@ -52,7 +51,7 @@ One thing to note about User Settings in VS Code is that at the time of writing 
         "editor.wrappingIndent": "same"
     },
     "eslint.enable": false,
-    "tslint.enable": false,
+    "tslint.enable": false, // Set this to true in the workspace settings
     "editor.wrappingIndent": "indent",
     "editor.renderIndentGuides": true,
     "workbench.editor.tabCloseButton": "left",
@@ -75,7 +74,7 @@ npm might not be perfect, but I see it as the simplest way to get going.
 ### Node Security Platform - nsp
 Scan your `node_modules/` for potential security issues. This should be incorporated into the `npm start` script in order to catch potential security issues early.
 
-## Bundling, Minification, Sourcemaps, Transpiling - webpack
+## Bundling, Minification, Sourcemaps, Transpiling - webpack and TypeScript
 
 ## Development Webserver - webpack-dev-server
 
@@ -88,16 +87,16 @@ Scan your `node_modules/` for potential security issues. This should be incorpor
   - [x] User Settings
   - [ ] Workspace Settings
 - [x] Package Management
-- [ ] Bundling
-- [ ] Minification
+- [x] Bundling
+- [x] Minification
 - [ ] Sourcemaps
-- [ ] Transpiling
+- [x] Transpiling
 - [ ] Dynamic HTML Generation
 - [ ] Centralized HTTP
 - [ ] Mock API framework
 - [ ] Component Libraries
-- [ ] Development Webserver
-- [ ] Linting
+- [x] Development Webserver
+- [x] Linting
 - [ ] Automated Testing
 - [ ] Continuous Integration
 - [ ] Automated Build
