@@ -1,15 +1,11 @@
-// import webpack from 'webpack';
-// import path from 'path';
-// import HtmlWebpackPlugin from 'html-webpack-plugin';
-// import CleanWebpackPlugin from 'clean-webpack-plugin';
-
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+import * as webpack from 'webpack';
+import * as path from 'path';
+import * as HtmlWebpackPlugin from 'html-webpack-plugin';
+import * as CleanWebpackPlugin from 'clean-webpack-plugin';
 
 // const VENDOR_LIBS = [];
 
-module.exports = {
+const config: webpack.Configuration = {
   entry: {
     app: path.resolve(__dirname, 'src/index.ts'),
     // vendor: VENDOR_LIBS
@@ -33,9 +29,6 @@ module.exports = {
       }
     ]
   },
-  devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-  },
   devtool: 'cheap-eval-source-map',
   plugins: [
     new CleanWebpackPlugin(['dist']),
@@ -47,3 +40,5 @@ module.exports = {
     // })
   ]
 };
+
+export default config;
