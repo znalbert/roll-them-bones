@@ -1,20 +1,25 @@
-import * as webpack from 'webpack';
-import * as path from 'path';
-import * as HtmlWebpackPlugin from 'html-webpack-plugin';
-import * as CleanWebpackPlugin from 'clean-webpack-plugin';
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-// const VENDOR_LIBS = [];
+const VENDOR_LIBS = [
+  'lodash', 'react', 'react-dom', 'react-redux', 'react-router', 'redux'
+];
 
-const config: webpack.Configuration = {
+module.exports = {
   entry: {
-    app: path.resolve(__dirname, 'src/index.ts'),
-    // vendor: VENDOR_LIBS
+    app: path.resolve(__dirname, '../src/index.tsx'),
+    vendor: VENDOR_LIBS
   },
   target: 'web',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     publicPath: '/',
-    filename: 'app.[chunkhash].js'
+    filename: '[name].[chunkhash].js'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
   },
   module: {
     rules: [
@@ -33,7 +38,7 @@ const config: webpack.Configuration = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/index.html'),
+      template: path.resolve(__dirname, '../src/index.html'),
       cache: true,
       minify: {
         removeComments: true,
@@ -47,10 +52,8 @@ const config: webpack.Configuration = {
         minifyURLs: true
       }
     }),
-    // new webpack.optimize.CommonsChunkPlugin({
-    //   name: 'vendor'
-    // })
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor'
+    })
   ]
 };
-
-export default config;

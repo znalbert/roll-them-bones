@@ -1,6 +1,6 @@
-import * as webpack from 'webpack';
-import config from '../webpack.config.prod';
-import chalk from 'chalk';
+const webpack = require('webpack');
+const config = require('./webpack.config.prod');
+const chalk = require('chalk');
 
 process.env.NODE_ENV = 'production';
 
@@ -15,12 +15,12 @@ webpack(config).run((err, stats) => {
 
   if (jsonStats.hasErrors) {
     console.log(chalk.bgRed('Webpack generated the following errors:'))
-    return jsonStats.errors.map((err: string): void => console.log(chalk.red(err)));
+    return jsonStats.errors.map((err) => console.log(chalk.red(err)));
   }
 
   if (jsonStats.hasWarnings) {
     console.log(chalk.bgYellow('Webpack generated the following warnings:'))
-    return jsonStats.warnings.map((err: string): void => console.log(chalk.yellow(err)));
+    return jsonStats.warnings.map((err) => console.log(chalk.yellow(err)));
   }
 
   console.log(`Webpack stats: ${stats}`);
