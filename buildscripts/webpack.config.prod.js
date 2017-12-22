@@ -36,7 +36,7 @@ module.exports = {
   },
   devtool: 'cheap-eval-source-map',
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['../dist']),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/index.html'),
       cache: true,
