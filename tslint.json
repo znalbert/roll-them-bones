@@ -1,0 +1,171 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-eslint-rules"],
+  "rules": {
+    // tslint-react rules here
+    "jsx-alignment": true,
+    "jsx-no-string-ref": true,
+    "jsx-self-close": true,
+    "jsx-wrap-multiline": true,
+    // tslint rules
+    // - Typescript specific
+    "member-access": false,
+    "no-inferrable-types": [true],
+    "no-magic-numbers": false,
+    "no-var-requires": true,
+    "prefer-for-of": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "parameter",
+      "member-variable-declaration"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    // - Functionality
+    "curly": true,
+    "forin": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-console": [
+      true,
+      "debug",
+      "error",
+      "info",
+      "log",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-debugger": true,
+    "no-duplicate-variable": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-invalid-this": true,
+    "no-misused-new": true,
+    "no-shadowed-variable": true,
+    "no-string-literal": false,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-unused-expression": true,
+    "no-unused-new": true,
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+    "switch-default": true,
+    "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
+    "typeof-compare": true,
+    // - Maintainability
+    "eofline": true,
+    "indent": [true, "spaces"],
+    "linebreak-style": [true, "LF"],
+    "max-line-length": [true, 120],
+    "no-require-imports": true,
+    "no-trailing-whitespace": true,
+    "object-literal-sort-keys": false,
+    "prefer-const": true,
+    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+    // - Style
+    "align": [
+      true,
+      "parameters",
+      "arguments",
+      "statements"
+    ],
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "arrow-return-shorthand": [true],
+    "class-name": true,
+    "import-spacing": true,
+    "interface-name": [false],
+    "interface-over-type-literal": true,
+    "jsdoc-format": true,
+    "no-consecutive-blank-lines": [true, 2],
+    "object-literal-key-quotes": [true, "as-needed"],
+    "object-literal-shorthand": true,
+    "one-line": [
+      true,
+      "check-catch",
+      "check-else",
+      "check-finally",
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "one-variable-per-declaration": [true],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double",
+      "avoid-escape"
+    ],
+    "semicolon": [true, "always"],
+    "space-before-function-paren": [true, "always"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-module",
+      "check-operator",
+      "check-separator",
+      "check-type",
+      "check-typecast"
+    ],
+    // tslint-eslint-rules
+    // - Recommended to avoid possible errors
+    "no-constant-condition": true,
+    "no-control-regex": true,
+    "no-duplicate-case": true,
+    "no-empty-character-class": true,
+    "no-ex-assign": true,
+    "no-extra-boolean-cast": true,
+    "no-extra-semi": true,
+    "no-inner-declarations": [
+      true,
+      "both"
+    ],
+    "no-irregular-whitespace": true,
+    "no-regex-spaces": true,
+    "no-sparse-arrays": true,
+    "no-unexpected-multiline": true,
+    "valid-typeof": true,
+    // - Best practices
+    "no-multi-spaces": [true],
+    // - Stylistic
+    "array-bracket-spacing": [true, "always"],
+    "block-spacing": [
+      true,
+      "always"
+    ],
+    "brace-style": [
+      true,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "ter-indent": [true, 2],
+    "object-curly-spacing": [
+      true,
+      "always"
+    ],
+    "space-in-parens": [true, "never"]
+  }
+}
