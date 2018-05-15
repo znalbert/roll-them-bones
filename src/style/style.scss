@@ -1,0 +1,24 @@
+.rolls-input {
+  margin: 20px;
+  text-align: center;
+
+  input {
+    width: 10%;
+  }
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #eee;
+}
+
+.red {
+  color: red;
+}
+
+.title-section {
+  text-align: right;
+}
